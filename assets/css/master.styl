@@ -3,6 +3,10 @@
 normalize-css()
 base()
 
+// Global
+button
+    button(rgba(#fff,0),large,#fff)
+
 body
   margin: 0
   padding: 0
@@ -34,9 +38,8 @@ body
     button
       transition: border-color 0.4s, background-color 0.4s
       transition-timing-function : $ease-in-out-swift
-      button(rgba(#fff,0),large,#fff)
       border: 3px solid #fff
-      &:hover
+      &:hover, :focus
         background-color: #fff
         color: #555
         border: 3px solid #fff
@@ -50,12 +53,10 @@ footer
   justify-content: space-between
 
   color: #fff
-  background-color: rgba(0, 0, 0, 0.8)
+  background-color: rgba(0, 0, 0, 0.7)
 
   #col-1
     display: flex
-    align-item: bottom
 
     div
-      margin: 5px
-      align-self: bottom
+      margin: 5px 10px
