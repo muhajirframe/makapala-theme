@@ -9,12 +9,12 @@ html
     meta(name='description', content='description of your site')
     meta(name='author', content= "author of the site")
     meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet")
     title= _path
     != css()
 
   body
-    include header
     block content
-    include footer
+    include _footer
 
     != js()
