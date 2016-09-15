@@ -25,27 +25,24 @@ block content
 
   section#section-4
     h2 Get in Touch
-    #form
-      form
-        fieldset
-          label(for='name') Name
-          input#name(type='text' placeholder='Your Name' required)
-          label(for='email') Name
-          input#email(type='email' placeholder='Your Name' required)
-          label(for='message') Name
-          textarea#message(name='message' placeholder='Enter Message' required)
-    #contacts
-      div
-        h3 Email
-        a info@makapala.org
-      div
-        h3 Phone
-        a 0852 7040 3281
-      div
-        h3 Address
-        address
-        | 1234 Somewhere in Earth
-        br
-        Banda Aceh, Aceh, Indonesia
-
-
+    #contact-container
+      #form
+        form
+          fieldset
+            div
+              input#name(type='text' placeholder='Your Ugly Name' required)
+              input#email(type='email' placeholder='your_email@company.com' required)
+            textarea#message(name='message' placeholder='Enter Message' required)
+      #contacts-list
+        div
+          h3 Email
+          a info@makapala.org
+        div
+          h3 Phone
+          a 0852 7040 3281
+        div
+          h3 Address
+          address
+          | 1234 Somewhere in Earth
+          br
+          Banda Aceh, Aceh, Indonesia
