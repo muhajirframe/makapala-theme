@@ -1,29 +1,51 @@
 extends layout
 
 block content
-  main
-    section#section-1
-      #header-container
-        h1 Welcome to Makapala Website
-        h2 Satu Nyawa, Gak Banyak-Banyak
-        button Tombol Video
-      #info
-        #address
-          address
-            | Jln. Tgk. Abdullah, No.20, Bogor
-            br
-            | Jawa Barat, Indonesia
-        #social-media
-          span some social media icon here
-        #email
-          span info@makapala.org
+  section#section-1
+    #header-container
+      h1 Welcome to Makapala Website
+      h2 Satu Nyawa, Gak Banyak-Banyak
+      button Tombol Video
+    #info
+      #address
+        address
+          | Jln. Tgk. Abdullah, No.20, Bogor
+          br
+          | Jawa Barat, Indonesia
+      #social-media
+        span some social media icon here
+      #email
+        span info@makapala.org
 
-    section.section#section-2
-      .general-container
-        h2 Who are We?
+  section#section-2
+      h2 Who are We?
 
-    section.section#section-3
-      h2 Upcoming Events
+  section#section-3
+    h2 Upcoming Events
 
-    section.section#section-4
-      h2 Get in Touch
+  section#section-4
+    h2 Get in Touch
+    #form
+      form
+        fieldset
+          label(for='name') Name
+          input#name(type='text' placeholder='Your Name' required)
+          label(for='email') Name
+          input#email(type='email' placeholder='Your Name' required)
+          label(for='message') Name
+          textarea#message(name='message' placeholder='Enter Message' required)
+    #contacts
+      div
+        h3 Email
+        a info@makapala.org
+      div
+        h3 Phone
+        a 0852 7040 3281
+      div
+        h3 Address
+        address
+        | 1234 Somewhere in Earth
+        br
+        Banda Aceh, Aceh, Indonesia
+
+
