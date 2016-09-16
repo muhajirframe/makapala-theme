@@ -1,48 +1,9 @@
 extends layout
 
 block content
-  section#section-1
-    #header-container
-      h1 Welcome to Makapala Website
-      h2 Satu Nyawa, Gak Banyak-Banyak
-      button Tombol Video
-    #info
-      #address
-        address
-          | Jln. Tgk. Abdullah, No.20, Bogor
-          br
-          | Jawa Barat, Indonesia
-      #social-media
-        span some social media icon here
-      #email
-        span info@makapala.org
+  include _heading
+  include _about
+  include _event
+  include _contact
 
-  section#section-2
-      h2 Who are We?
-
-  section#section-3
-    h2 Upcoming Events
-
-  section#section-4
-    h2 Get in Touch
-    #contact-container
-      #form
-        form
-          fieldset
-            div
-              input#name(type='text' placeholder='Your Ugly Name' required)
-              input#email(type='email' placeholder='your_email@company.com' required)
-            textarea#message(name='message' placeholder='Enter Message' required)
-      #contacts-list
-        div
-          h3 Email
-          a info@makapala.org
-        div
-          h3 Phone
-          a 0852 7040 3281
-        div
-          h3 Address
-          address
-          | 1234 Somewhere in Earth
-          br
-          Banda Aceh, Aceh, Indonesia
+  include _footer

@@ -5,113 +5,12 @@ base()
 border-box-html()
 
 // Global
-button
-    button(rgba(#fff,0),large,#fff)
-
-section
-  padding: 100px
-  height: 100vh
-  color: #fff
-
-body
-  margin: 0
-  padding: 0
-
-  display: flex
-  flex-direction: column
-  background: url(https://static.pexels.com/photos/130111/pexels-photo-130111.jpeg) no-repeat bottom fixed;
-  background-size: cover;
-
+@import '_global'
 
 // sections
-#section-1
-  padding: 0
-  position: relative
-  display: flex
-  align-items: center
-  justify-content: center
-  background: rgba(0, 0, 0, 0.6);
+@import '_heading'
+@import '_about'
+@import '_event'
+@import '_contact'
+@import '_footer'
 
-  #header-container
-    color: rgba(#fff,1)
-    h1
-      font-size: 4em
-      margin-bottom: 0
-      font-weight: 300
-    h2
-      margin-top: 0.6em
-    button
-      transition: border-color 0.4s, background-color 0.4s
-      transition-timing-function : $ease-in-out-swift
-      border: 3px solid #fff
-      &:hover, :focus
-        background-color: #fff
-        color: #555
-        border: 3px solid #fff
-  #info
-    position: absolute
-    height: 10vh
-    width: 100%
-    top: 90vh
-    display: flex
-    align-items: center
-    justify-content: space-between
-    background-color: rgba(0, 0, 0, 0.18)
-    color: #fafafa
-
-#section-2
-  background-color: rgba(green,0.9)
-
-#section-3
-  background-color: $peter-river
-
-#section-4
-  height: 80vh
-  background-color: #666
-  #contact-container
-    display: flex
-    justify-content: space-between
-
-    #form
-      flex-grow: 1
-      input
-      textarea
-        border-radius: 4px
-        background-color: darken(#666, 20%)
-        border: none
-        padding: 10px
-        margin: 10px 0
-        width: 48%
-      textarea
-        width: 100%
-        resize: none
-        min-height: 150px
-      fieldset
-        border: none
-        width: 90%
-        padding: 0
-        margin-top: 10px
-      fieldset > div
-        display: flex
-        justify-content: space-between
-
-    #contacts-list
-      flex-grow: 1
-      padding: 0px 80px 20px 20px
-
-footer
-  height: 10vh
-  padding: 0 10px
-
-  display: flex
-  align-items: center
-  justify-content: space-between
-
-  color: #fff
-  background-color: rgba(0, 0, 0, 0.7)
-
-  #col-1
-    display: flex
-
-    div
-      margin: 5px 10px
