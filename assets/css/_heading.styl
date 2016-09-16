@@ -8,25 +8,40 @@
 
   #header-container
     color: rgba(#fff,1)
+    width: 80%
+    +above(1440px)
+      font-size: 1.3vw
     h1
       font-size: 4em
       margin-bottom: 0
       font-weight: 300
+      +below(425px)
+        font-size: 2em
     h2
       margin-top: 0.6em
+      +below(425px)
+        font-size: 0.7em
     button
+      button()
+      padding: 14px 30px
+      border: 3px solid #fff
+      background: none
+      font-size: 18px
+      +below(425px)
+        font-size: 0.5em
+        padding: 7px 13px
       transition: border-color 0.4s, background-color 0.4s
       transition-timing-function : $ease-in-out-swift
-      border: 3px solid #fff
-      &:hover, :focus
+      &:hover
+      &:focus
         background-color: #fff
         color: #555
         border: 3px solid #fff
   #info
     position: absolute
-    height: 10vh
+    height: 8vh
     width: 100%
-    top: 90vh
+    top: 92vh
     display: flex
     align-items: center
     justify-content: space-between
@@ -34,4 +49,7 @@
     color: #757575
     padding: 0 25px
     #address
-      font-size: 14px
+      font-size: .9em
+    +below(425px)
+      font-size: .6em
+      padding: 0 8px

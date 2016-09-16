@@ -4,13 +4,16 @@ body
 
   display: flex
   flex-direction: column
-  background: url(https://static.pexels.com/photos/130111/pexels-photo-130111.jpeg) no-repeat bottom fixed;
-  background-size: cover;
+  background: url(https://static.pexels.com/photos/130111/pexels-photo-130111.jpeg) no-repeat
+  background-size: cover
+  background-position: bottom
+  background-attachment: fixed
 
-button
-    button(rgba(#fff,0),large,#fff)
 
 section
-  padding: 100px
+  padding: 70px
   height: 100vh
   color: #fff
+
+  +below(425px)
+    padding: 30px
