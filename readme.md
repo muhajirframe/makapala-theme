@@ -2,6 +2,9 @@
 
 Originally created for Makapala Website
 
+**No longer maintained** moved to [muhajirframe/makapala](https://github.com/muhajirframe/makapala)
+
+
 ### Setup
 
 - make sure [node.js](http://nodejs.org) and [roots](http://roots.cx) are installed
